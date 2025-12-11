@@ -1,0 +1,18 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: n8n-ingress
+  labels:
+    app-ingress: n8n-ingress
+spec:
+  rules:
+    - host: n8n.local.dkc26.live
+      http:
+        paths:
+        - path: /
+          pathType: Prefix
+          backend:
+            service:
+              name: n8n-service
+              port:
+                number: 80

@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: n8n-config
+  labels:
+    app: n8n
+data:
+  N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS: "true"
+  N8N_HOST: "n8n.local.dkc26.live"
+  N8N_PORT: "5678"
+  N8N_PROTOCOL: "http"
+  N8N_SECURE_COOKIE: "false"
+  N8N_RUNNERS_ENABLED: "true"
+  N8N_METRICS: "true"
+  NODE_ENV: "homelab"
+  WEBHOOK_URL: "http://n8n.local.dkc26.live/"
