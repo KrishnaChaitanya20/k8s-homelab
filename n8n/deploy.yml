@@ -22,10 +22,10 @@ spec:
           envFrom:
             - configMapRef:
                 name: n8n-config
-      #     volumeMounts:
-      #       - name: n8n-data
-      #         mountPath: /home/node/.n8n
-      # volumes:
-      #   - name: n8n-data
-      #     persistentVolumeClaim:
-      #       claimName: n8n-pvc
+          volumeMounts:
+            - name: n8n-data
+              mountPath: /home/node/.n8n
+      volumes:
+        - name: n8n-data
+          persistentVolumeClaim:
+            claimName: n8n-pvc
