@@ -7,16 +7,15 @@ resources:
   - ingress.yml
   - pv.yml
   - pvc.yml
-  - configmap.yml
 
-# configMapGenerator:
-#   - name: n8n-config
-#     envs:
-#       - n8n.env
+configMapGenerator:
+  - name: n8n-config
+    envs:
+      - config.properties
 
-# generatorOptions:
-#   labels:
-#     app: n8n
+generatorOptions:
+  labels:
+    app: n8n
 
 labels:
   - pairs:
