@@ -2,12 +2,11 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
-  - deploy.yml
-  - service.yml
-  - ingress.yml
-  - pv.yml
-  - pvc.yml
-  - service-monitor.yml
+  - deploy.yaml
+  - service.yaml
+  - ingress.yaml
+  - volume.yaml
+  - service-monitor.yaml
 
 configMapGenerator:
   - name: n8n-config
