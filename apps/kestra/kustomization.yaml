@@ -1,0 +1,22 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - deploy.yaml
+  - service.yaml
+  - ingress.yaml
+  - volume.yaml
+
+configMapGenerator:
+  - name: kestra-configuration
+    files:
+      - KESTRA_CONFIGURATION=kestra.config
+
+generatorOptions:
+  labels:
+    app: kestra
+
+labels:
+  - pairs:
+      app: kestra
+    includeSelectors: true
