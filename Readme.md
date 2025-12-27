@@ -19,3 +19,11 @@ This repo contains configuration files and documentation for setting up a Kubern
    - `ingress-nginx/`: Contains documentation for setting up ingress-nginx for kind clusters.
    - `prometheus-stack/`: Contains manifests and configurations for deploying the Prometheus monitoring stack(kube-prometheus-stack).
         - `ingress/`: Contains ingress config manifests for accessing Prometheus and Grafana dashboards.
+
+
+### Future Improvements
+- [ ] Create k8s cluster using kubeadm and migrate from kind to kubeadm.
+- [ ] Migrate/Transition from Ingress to Gateway API.
+- [ ] Change pv storage from hostPath to remote storage solution (NFS, Longhorn, etc.).
+- [ ] Add more applications to the `apps/` directory for deployment via Argo CD.
+   - Semaphore
