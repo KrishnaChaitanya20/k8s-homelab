@@ -8,9 +8,28 @@ The purpose of this document is to capture the configuration and decisions made 
 
 This README is meant to serve as:
 
-* A reference for future self
-* A reproducible note for similar homelab setups
+- A reference for future self
+- A reproducible note for similar homelab setups
 
 ---
 
-The sections below document the actual setup used.
+### Installation steps
+
+```
+kubectl edit configmap -n kube-system kube-proxy
+```
+and set:
+```
+apiVersion: kubeproxy.config.k8s.io/v1alpha1
+kind: KubeProxyConfiguration
+mode: "ipvs"
+ipvs:
+  strictARP: true
+```
+
+> More documentation on this step refer [this.](https://metallb.io/installation/#preparation)
+
+In the root dir
+```
+kubectl -f apply platform/metallb 
+```
