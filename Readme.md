@@ -19,6 +19,8 @@ This repo contains configuration files and documentation for setting up a Kubern
    - `ingress-nginx/`: Contains documentation for setting up ingress-nginx for kind clusters.
    - `prometheus-stack/`: Contains manifests and configurations for deploying the Prometheus monitoring stack(kube-prometheus-stack).
         - `ingress/`: Contains ingress config manifests for accessing Prometheus and Grafana dashboards.
+   - `metallb` : Contains the documentation and manifest files for setting up a Layer 2 MetalLB service. 
+      > This `MetalLB` setup is only for bare metal cluster and not needed for kind based clusters
 
 
 ### Future Improvements
