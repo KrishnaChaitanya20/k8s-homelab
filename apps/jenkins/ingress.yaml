@@ -4,7 +4,7 @@ metadata:
   name: jenkins-ingress
 spec:
   rules:
-    - host: jenkins.local.dkc26.live
+    - host: jenkins.localhost
       http:
         paths:
         - path: /
