@@ -3,6 +3,12 @@ kind: Ingress
 metadata:
   name: prometheus-ingress
   namespace: monitoring
+  annotations:
+    gethomepage.dev/description: Prometheus Monitoring and Alerting System
+    gethomepage.dev/enabled: "true"
+    gethomepage.dev/group: Monitoring
+    gethomepage.dev/icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/webp/prometheus.webp
+    gethomepage.dev/name: Prometheus
 
 spec:
   rules:

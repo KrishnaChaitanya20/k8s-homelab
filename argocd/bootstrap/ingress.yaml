@@ -3,6 +3,12 @@ kind: Ingress
 metadata:
   name: argocd-server-ingress
   namespace: argocd
+  annotations:
+    gethomepage.dev/description: ArgoCD GitOps Platform
+    gethomepage.dev/enabled: "true"
+    gethomepage.dev/group: CI/CD
+    gethomepage.dev/icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/webp/argo-cd.webp
+    gethomepage.dev/name: ArgoCD
 spec:
   rules:
     - host: argocd.localhost

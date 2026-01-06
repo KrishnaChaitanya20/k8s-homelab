@@ -3,7 +3,12 @@ kind: Ingress
 metadata:
   name: grafana-ingress
   namespace: monitoring
-
+  annotations:
+    gethomepage.dev/description: Grafana Analytics and Monitoring Platform
+    gethomepage.dev/enabled: "true"
+    gethomepage.dev/group: Monitoring
+    gethomepage.dev/icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/webp/grafana.webp
+    gethomepage.dev/name: Grafana
 spec:
   rules:
     - host: grafana.localhost

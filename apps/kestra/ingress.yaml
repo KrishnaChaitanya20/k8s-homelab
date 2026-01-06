@@ -2,6 +2,12 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: kestra-ingress
+  annotations:
+    gethomepage.dev/description: Kestra Workflow Orchestration Platform
+    gethomepage.dev/enabled: "true"
+    gethomepage.dev/group: CI/CD
+    gethomepage.dev/icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/webp/kestra.webp
+    gethomepage.dev/name: Kestra
 spec:
   rules:
     - host: kestra.localhost

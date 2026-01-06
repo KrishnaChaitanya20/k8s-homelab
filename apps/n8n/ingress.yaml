@@ -2,6 +2,12 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: n8n-ingress
+  annotations:
+    gethomepage.dev/description: n8n Workflow Automation Tool
+    gethomepage.dev/enabled: "true"
+    gethomepage.dev/group: CI/CD
+    gethomepage.dev/icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/webp/n8n.webp
+    gethomepage.dev/name: n8n
 spec:
   rules:
     - host: n8n.localhost
