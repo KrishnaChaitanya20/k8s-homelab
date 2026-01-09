@@ -22,6 +22,17 @@ This repo contains configuration files and documentation for setting up a Kubern
    - `metallb` : Contains the documentation and manifest files for setting up a Layer 2 MetalLB service. 
       > This `MetalLB` setup is only for bare metal cluster and not needed for kind based clusters
 
+### How to deploy?
+   #### Prerequisites
+   - Ingress controller deployed in the cluster
+   - ArgoCD with CRDs enabled (If using argocd to deploy applications)
+
+   #### Steps to deploy
+   - To deploy serivces individually follow the instructions present in each folder inside `apps/`
+   - To deploy All services use
+      ```bash
+      kubectl apply -f argocd/app-of-apps.yml
+      ```
 
 ### Future Improvements
 - [ ] Create k8s cluster using kubeadm and migrate from kind to kubeadm.
