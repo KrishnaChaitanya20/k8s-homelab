@@ -40,3 +40,7 @@ This repo contains configuration files and documentation for setting up a Kubern
 - [ ] Change pv storage from hostPath to remote storage solution (NFS, Longhorn, etc.).
 - [ ] Add more applications to the `apps/` directory for deployment via Argo CD.
    - Semaphore
+
+### Contributions
+- To contribute to this repo fork the repo, make your changes, test them and raise a pull request
+- Feel free to provide and suggestions or recommendations.
