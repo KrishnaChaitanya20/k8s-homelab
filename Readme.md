@@ -35,11 +35,11 @@ This repo contains configuration files and documentation for setting up a Kubern
       ```
 
 ### Future Improvements
-- [ ] Create k8s cluster using kubeadm and migrate from kind to kubeadm.
 - [ ] Migrate/Transition from Ingress to Gateway API.
 - [ ] Change pv storage from hostPath to remote storage solution (NFS, Longhorn, etc.).
 - [ ] Add more applications to the `apps/` directory for deployment via Argo CD.
    - Semaphore
+- [ ] Create k8s cluster using kubeadm and migrate from kind to kubeadm.
 
 ### Contributions
 - To contribute to this repo fork the repo, make your changes, test them and raise a pull request
