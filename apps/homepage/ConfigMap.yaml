@@ -8,6 +8,10 @@ metadata:
 data:
   kubernetes.yaml: |
     mode: cluster
+    services:
+      enabled: true
+    ingresses:
+      enabled: true
   settings.yaml: ""
   custom.css: ""
   custom.js: ""
