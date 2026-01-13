@@ -10,6 +10,8 @@ rules:
     resources:
       - namespaces
       - pods
+      - services
+      - endpoints
       - nodes
     verbs:
       - get
