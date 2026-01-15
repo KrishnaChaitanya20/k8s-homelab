@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: jenkins-ingress
+  name: jenkins
   annotations:
     gethomepage.dev/description: Jenkins CI/CD Server
     gethomepage.dev/enabled: "true"
@@ -17,6 +17,6 @@ spec:
           pathType: Prefix
           backend:
             service:
-              name: jenkins-service
+              name: jenkins
               port:
                 number: 8080

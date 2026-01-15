@@ -11,5 +11,5 @@ resources:
 
 labels:
   - pairs:
-      app: jenkins
+      app.kubernetes.io/name: jenkins
     includeSelectors: true
