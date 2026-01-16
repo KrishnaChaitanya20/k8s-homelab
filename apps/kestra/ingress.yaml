@@ -17,6 +17,6 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: kestra-service
+                name: kestra
                 port:
                   number: 80
