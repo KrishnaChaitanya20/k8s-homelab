@@ -18,5 +18,5 @@ generatorOptions:
 
 labels:
   - pairs:
-      app: kestra
+      app.kubernetes.io/name: jenkins
     includeSelectors: true
