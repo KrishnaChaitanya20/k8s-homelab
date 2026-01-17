@@ -18,6 +18,9 @@ spec:
                 configMapKeyRef:
                   name: kestra-configuration
                   key: KESTRA_CONFIGURATION
+          volumeMounts:
+            - name: kestra-data
+              mountPath: /app/storage
       volumes:
         - name: kestra-data
           persistentVolumeClaim:
